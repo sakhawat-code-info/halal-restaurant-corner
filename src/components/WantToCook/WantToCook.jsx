@@ -7,7 +7,7 @@ const WantToCook = ({ wantToCookItems, handleWantToCookDataRemoveFun, cookingIte
 
     return (
         <div className="">
-            <div>
+            <div className='mb-8'>
                 <div className="text-center px-8">
                     <h1 className="font-bold">Want to cook : {wantToCookItems.length}</h1>
                     <div className="divider"></div>
@@ -17,23 +17,23 @@ const WantToCook = ({ wantToCookItems, handleWantToCookDataRemoveFun, cookingIte
                     <div className="">
                         <table className="table ">
                             <thead>
-                                <tr>
+                                <tr className='text-[#878787] text-base mb-4'>
                                     <th></th>
                                     <th>Name</th>
                                     <th>Time</th>
                                     <th>Calories</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody className='text-[#282828B3]'>
                                 {
                                     wantToCookItems.map((wantToCookItem, index) => {
                                         return (
                                             <tr className="hover" key={index} >
-                                                <td>{index + 1}</td>
+                                                <td className='font-bold'>{index + 1}</td>
                                                 <td>{wantToCookItem.recipe_name}</td>
-                                                <td>{wantToCookItem.preparing_time}</td>
-                                                <td>{wantToCookItem.calories}</td>
-                                                <td><button onClick={() => handleWantToCookDataRemoveFun(wantToCookItem)} className="btn btn-success rounded-full font-semibold">Preparing</button></td>
+                                                <td>{wantToCookItem.preparing_time} minutes</td>
+                                                <td>{wantToCookItem.calories} calories</td>
+                                                <td className='p-0'><button onClick={() => handleWantToCookDataRemoveFun(wantToCookItem)} className="btn btn-success rounded-full font-semibold">Preparing</button></td>
                                             </tr>
                                         )
                                     })

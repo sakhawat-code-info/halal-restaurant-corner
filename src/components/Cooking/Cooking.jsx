@@ -5,7 +5,7 @@ const Cooking = ({ cookingItems }) => {
         <div>
             <div>
                 <div className="text-center px-8">
-                    <h1 className="font-bold">Want to cook : {cookingItems.length}</h1>
+                    <h1 className="font-bold">Currently cooking : {cookingItems.length}</h1>
                     <div className="divider"></div>
                 </div>
 
@@ -13,28 +13,35 @@ const Cooking = ({ cookingItems }) => {
                     <div className="">
                         <table className="table ">
                             <thead>
-                                <tr>
+                                <tr className='text-[#878787] text-base mb-4'>
                                     <th></th>
                                     <th>Name</th>
                                     <th>Time</th>
                                     <th>Calories</th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody className='text-[#282828B3]'>
                                 {
                                     cookingItems.map((cookingItem, index) => {
                                         return (
                                             <tr className="hover" key={index} >
                                                 <td>{index + 1}</td>
                                                 <td>{cookingItem.recipe_name}</td>
-                                                <td>{cookingItem.preparing_time}</td>
-                                                <td>{cookingItem.calories}</td>
+                                                <td>{cookingItem.preparing_time} minutes</td>
+                                                <td>{cookingItem.calories} calories</td>
                                             </tr>
                                         )
                                     })
                                 }
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td className='text-[#282828CC] font-medium'>Total Time = {cookingItems.reduce((p, c) => p + c.preparing_time, 0)} minutes</td>
+                                    <td className='text-[#282828CC] font-medium'>Total Calories = {cookingItems.reduce((p, c) => p + c.calories, 0)} calories</td>
+                                </tr>
 
                             </tbody>
+
                         </table>
                     </div>
                 </div>

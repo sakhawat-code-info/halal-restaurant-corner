@@ -12,8 +12,8 @@
             "Garlic",
             "Black pepper"
         ],
-        "preparing_time": "30 minutes",
-        "calories": "450 calories"
+        "preparing_time": 30,
+        "calories": 450
     },
     {
         "recipe_id": 2,
@@ -30,8 +30,8 @@
             "Salt",
             "Black pepper"
         ],
-        "preparing_time": "25 minutes",
-        "calories": "320 calories"
+        "preparing_time": 25,
+        "calories": 320
     },
     {
         "recipe_id": 3,
@@ -49,8 +49,8 @@
             "Soy sauce",
             "Tamarind paste"
         ],
-        "preparing_time": "35 minutes",
-        "calories": "380 calories"
+        "preparing_time": 35,
+        "calories": 380
     },
     {
         "recipe_id": 4,
@@ -66,8 +66,8 @@
             "Salt",
             "Black pepper"
         ],
-        "preparing_time": "20 minutes",
-        "calories": "280 calories"
+        "preparing_time": 20,
+        "calories": 280
     },
     {
         "recipe_id": 5,
@@ -84,8 +84,8 @@
             "Salsa",
             "Sour cream"
         ],
-        "preparing_time": "30 minutes",
-        "calories": "380 calories"
+        "preparing_time": 30,
+        "calories": 380
     },
     {
         "recipe_id": 6,
@@ -103,7 +103,7 @@
             "White wine",
             "Thyme"
         ],
-        "preparing_time": "40 minutes",
-        "calories": "320 calories"
+        "preparing_time": 40,
+        "calories": 320
     }
 ]

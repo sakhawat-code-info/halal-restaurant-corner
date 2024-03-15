@@ -2,7 +2,7 @@
 const Header = () => {
     return (
         <div>
-            <div className='container mx-auto'>
+            <div className='container mx-auto md:mb-12'>
                 <div className="navbar bg-base-100">
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -16,7 +16,7 @@ const Header = () => {
                                 <li><a>Search</a></li>
                             </ul>
                         </div>
-                        <a className="btn btn-ghost text-xl">Halal FooD corneR</a>
+                        <a className="btn btn-ghost text-3xl font-bold">Halal FooD corneR</a>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
@@ -27,8 +27,12 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <div className="form-control">
-                            <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto" />
+                        <div className="form-control md:mr-6">
+                            <label className="input input-bordered rounded-full flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="w-4 h-4 opacity-70"><path fillRule="evenodd" d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" clipRule="evenodd" /></svg>
+                                <input type="text" className="grow rounded-full" placeholder="Search" />
+                            </label>
+
                         </div>
                         <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
