@@ -14,7 +14,7 @@ const MenuItems = ({ handleWantToCookItemFun }) => {
     }, [])
 
     return (
-        <div className='grid grid-cols-2 gap-6'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 p-6 md:p-0'>
             {
                 menuItems.map(menuItem => <SingleMenuItem
                     key={menuItem.recipe_id}

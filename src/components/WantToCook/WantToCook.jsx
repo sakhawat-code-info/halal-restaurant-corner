@@ -3,7 +3,7 @@ import Cooking from '../Cooking/Cooking';
 
 const WantToCook = ({ wantToCookItems, handleWantToCookDataRemoveFun, cookingItems }) => {
 
-    console.log(cookingItems);
+    // console.log(cookingItems);
 
     return (
         <div className="">

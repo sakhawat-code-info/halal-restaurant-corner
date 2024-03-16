@@ -7,7 +7,7 @@ const SingleMenuItem = ({ menuItem, handleWantToCookItemFun }) => {
     return (
         <div>
 
-            <div className="card bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl ">
                 <figure className="px-8 pt-8">
                     <img src={recipe_image} alt="Shoes" className="rounded-xl" />
                 </figure>
@@ -17,12 +17,14 @@ const SingleMenuItem = ({ menuItem, handleWantToCookItemFun }) => {
 
                     <div className="divider"></div>
                     <h2 className="mb-2 font-semibold">Ingredients: {ingredients.length}</h2>
-                    <ul className="">
-                        {
-                            ingredients.map((item, index) =>
+                    <ul className="list-disc">
+                        <div className="ml-6">
+                            {
+                                ingredients.slice(0, 3).map((item, index) =>
 
-                                <li key={index}> . {item}</li>)
-                        }
+                                    <li key={index}>{item}</li>)
+                            }
+                        </div>
 
                     </ul>
                     <div className="divider"></div>
