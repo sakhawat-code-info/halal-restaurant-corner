@@ -33,7 +33,7 @@ const WantToCook = ({ wantToCookItems, handleWantToCookDataRemoveFun, cookingIte
                                                 <td>{wantToCookItem.recipe_name}</td>
                                                 <td>{wantToCookItem.preparing_time} minutes</td>
                                                 <td>{wantToCookItem.calories} calories</td>
-                                                <td className='p-0'><button onClick={() => handleWantToCookDataRemoveFun(wantToCookItem)} className="btn btn-success rounded-full font-semibold">Preparing</button></td>
+                                                <td className='p-0'><button onClick={() => handleWantToCookDataRemoveFun(wantToCookItem)} className="btn bg-[#0BE58A] border-[#0BE58A] rounded-full font-semibold">Preparing</button></td>
                                             </tr>
                                         )
                                     })

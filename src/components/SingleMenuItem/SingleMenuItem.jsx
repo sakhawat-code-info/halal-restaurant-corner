@@ -12,11 +12,11 @@ const SingleMenuItem = ({ menuItem, handleWantToCookItemFun }) => {
                     <img src={recipe_image} alt="Shoes" className="rounded-xl" />
                 </figure>
                 <div className="card-body ">
-                    <h2 className="card-title mb-2">{recipe_name}</h2>
+                    <h2 className="card-title mb-1">{recipe_name}</h2>
                     <p>{short_description}</p>
 
                     <div className="divider"></div>
-                    <h2 className="mb-2 font-semibold">Ingredients: {ingredients.length}</h2>
+                    <h2 className="mb-1 font-semibold">Ingredients: {ingredients.length}</h2>
                     <ul className="list-disc">
                         <div className="ml-6">
                             {
@@ -28,7 +28,7 @@ const SingleMenuItem = ({ menuItem, handleWantToCookItemFun }) => {
 
                     </ul>
                     <div className="divider"></div>
-                    <div className="flex gap-6 mb-6">
+                    <div className="flex gap-6 mb-3">
                         <div className="flex items-center gap-2">
                             <div><CiClock2 /> </div>
                             <div>{preparing_time}</div>
@@ -41,7 +41,7 @@ const SingleMenuItem = ({ menuItem, handleWantToCookItemFun }) => {
 
 
                     <div className="card-actions">
-                        <button onClick={() => handleWantToCookItemFun(menuItem)} className="btn btn-success rounded-full font-semibold">Want to Cook</button>
+                        <button onClick={() => handleWantToCookItemFun(menuItem)} className="btn bg-[#0BE58A] border-[#0BE58A] rounded-full font-semibold">Want to Cook</button>
                     </div>
                 </div>
             </div>
